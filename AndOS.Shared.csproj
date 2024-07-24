@@ -1,0 +1,22 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>disable</Nullable>
+    <Version>1.0.0</Version>
+    <Authors>Anderson</Authors>
+    <Company>AndOS</Company>
+    <PackageDescription>Pacote que contém classes e estruturas compartilhadas pelo front e back</PackageDescription>
+    <RepositoryUrl>https://github.com/AndersonCosta28/AndOS.Shared</RepositoryUrl>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MediatR" Version="12.4.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\AndOS.Core\AndOS.Core.csproj" />
+  </ItemGroup>
+
+</Project>
