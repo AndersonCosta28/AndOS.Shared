@@ -4,7 +4,7 @@
     <TargetFramework>net8.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>disable</Nullable>
-    <Version>1.0.0</Version>
+    <Version>1.0.1</Version>
     <Authors>Anderson</Authors>
     <Company>AndOS</Company>
     <PackageDescription>Pacote que contém classes e estruturas compartilhadas pelo front e back</PackageDescription>
@@ -15,8 +15,11 @@
     <PackageReference Include="MediatR" Version="12.4.0" />
   </ItemGroup>
 
-  <ItemGroup>
+  <ItemGroup Condition="'$(Configuration)' == 'Debug'">
     <ProjectReference Include="..\AndOS.Core\AndOS.Core.csproj" />
   </ItemGroup>
 
+  <ItemGroup Condition="'$(Configuration)' == 'Release'">
+    <PackageReference Include="AndOS.Core" Version="1.0.0" />
+  </ItemGroup>
 </Project>

@@ -1,0 +1,3 @@
+﻿namespace AndOS.Shared.Requests.UserPreferences.Get.GetDefaultProgramByExtension;
+
+public record GetDefaultProgramByExtensionResponse(DefaultProgramToExtensionDTO DefaultProgramToExtension);
