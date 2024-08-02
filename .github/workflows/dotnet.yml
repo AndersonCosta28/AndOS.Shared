@@ -35,4 +35,4 @@ jobs:
         file: ./AndOS.Shared.csproj
 
     - name: Generate package
-      run: dotnet nuget push "bin/Release/PROJECT_NAME.${{ steps.test.package_version.version }}.nupkg" --source "github"
+      run: dotnet nuget push "bin/Release/PROJECT_NAME.${{ steps.package_version.version }}.nupkg" --source "github"
