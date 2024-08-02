@@ -8,7 +8,9 @@ on:
     branches: [ "master" ]
   pull_request:
     branches: [ "master" ]
-
+env:
+  AND_OS_TOKEN: ${{ secrets.PAT_WORKFLOW }}
+  AND_OS_ACTOR: ${{ GITHUB_ACTOR }}
 jobs:
   build:
 
