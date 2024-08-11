@@ -1,4 +1,4 @@
-﻿namespace AndOS.Shared.Requests.Auth;
+﻿namespace AndOS.Shared.Requests.Auth.Register;
 
 public class RegisterRequest : IRequest
 {

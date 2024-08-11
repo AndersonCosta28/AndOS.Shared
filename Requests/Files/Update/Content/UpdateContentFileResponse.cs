@@ -1,12 +1,5 @@
-﻿namespace AndOS.Shared.Requests.Files.Update.Content;
+﻿using AndOS.Core.Enums;
 
-public class UpdateContentFileResponse
-{
-    public UpdateContentFileResponse() { }
+namespace AndOS.Shared.Requests.Files.Update.Content;
 
-    public UpdateContentFileResponse(string url)
-    {
-        Url = url;
-    }
-    public string Url { get; set; }
-}
+public record UpdateContentFileResponse(string Url, CloudStorage CloudStorage);
